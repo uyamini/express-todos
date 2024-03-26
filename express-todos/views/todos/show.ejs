@@ -7,15 +7,9 @@
     <title>Express To-Do</title>
 </head>
 <body>
-    <h1>All To-Dos</h1>
-    <ul>
-      <% todos.forEach(function(t) { %>
-        <li>
-          <a href="/todos/<%= t.id %>"><%= t.todo %></a>
-            - 
-          <%= t.done ? 'done' : 'not done' %>
-        </li>
-      <% }); %>
-    </ul>
+    <a href="/">Home</a>
+    <a href="/todos">All To-Dos</a>
+    <h3><%= todo.todo %></h3>
+    <h3>Complete: <%= todo.done ? 'Yes' : 'No' %></h3>
   </body>
 </html>
